@@ -1,0 +1,261 @@
+@charset "utf-8";
+//初始化
+body {
+  margin: 0px;
+  font-size:16/@rem;
+  font-family:Arial,Helvetica,STHeiTi,sans-serif;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color:#000;
+}
+input {
+  -webkit-appearance: none;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+/*LESS*/
+// 变量定义rem大小，并设置单位
+@rem:75rem;
+/*解决ios下表单圆角的问题*/
+/*框架搭建*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+// 图标字体引用用这块
+@font-face{
+    font-family: "iconfont"; src: url(../iconfont.ttf);
+}
+.icon-home:before { content: "\e617"; }
+
+.icon-fabu-copy:before { content: "\e604"; }
+
+.icon-wode:before { content: "\e661"; }
+
+.icon-fenlei:before { content: "\e602"; }
+
+.icon-search:before { content: "\e504"; }
+/*主题内容*/
+// 手机滑屏这块
+.swiper-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    >img{
+        width: 100%;
+        height: 470/@rem;
+    }
+}
+.hsea{
+    width: 604/@rem;
+    height: 82/@rem;
+    background: #fff;
+    border-radius:  15/@rem;
+    position: absolute;
+    z-index: 3;
+    >input{
+    height: 80/@rem;
+    width: 460/@rem;
+    border: none;
+    outline: none;
+    margin-left: -1px;
+    font-size: 26/@rem;
+    border-top-right-radius: 15/@rem;
+    border-bottom-right-radius: 15/@rem;
+    text-indent: 100/@rem;
+    float: left;}
+    .sel{
+    width: 144/@rem;
+    height: 82/@rem;
+    border-top-left-radius: 15/@rem;
+    border-bottom-left-radius: 15/@rem;
+    font-size: 26/@rem;
+    text-align: center;
+    border: 0px;
+    outline:none;
+    float: left;
+    >optgroup{
+        font-size: 16/@rem;
+        border: none;
+        width: 100/@rem;
+    }
+}
+}
+.many{
+    width: 100%;
+    height: 215/@rem;
+    border-top: 14/@rem solid #ccc;
+    border-bottom: 30/@rem solid #f5f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >div{
+        height: 160/@rem;
+        >img{
+        width: 105/@rem;
+        height: 105/@rem;
+    }
+    }
+    
+    >div>p{
+        font-size: 30/@rem;
+        color: #333;
+    }
+}
+.contents{
+    width: 100%;
+    height: 80/@rem;
+    text-indent: 30/@rem;
+    font-size: 28/@rem;
+    line-height: 80/@rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.name{
+    width: 688/@rem;
+    height: 210/@rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >img{
+        width: 162/@rem;
+        height: 162/@rem;
+    }
+    >div{
+        width: 440/@rem;
+        height: 165/@rem;
+        >div:nth-child(1){
+            font-size:34/@rem;
+            font-weight: bold;
+            color: #222;
+        }
+        >div:nth-child(2){
+            width: 86/@rem;
+            height: 30/@rem;
+            font-size: 20/@rem;
+            border: 1px solid #bb1d47;
+            color: #bb1d47;
+            text-align: center;
+            line-height: 30/@rem;
+            margin-top: 3/@rem;
+        }
+        >div:nth-child(3){
+            width: 318/@rem;
+            height: 26/@rem;
+            font-size: 26/@rem;
+            margin-top: -14/@rem;
+            display: flex;
+            justify-content: space-between;
+            color: #666666;
+        }
+        >div:nth-child(4){
+            width: 300/@rem;
+            height: 26/@rem;
+            font-size: 26/@rem;
+            margin-top: 12/@rem;
+            display: flex;
+            justify-content: space-between;
+            color: #666666;
+        }
+    }
+}
+.bcc{
+    width: 100%;
+    height: 30/@rem;
+    background: #f5f3f3;
+    border-top: 1px solid #ccc;
+}
+.foot{
+    width: 100%;
+    height: 133/@rem;
+    background: #f5f3f3;
+}
+.footnav{
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 112/@rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >div{
+        height: 90/@rem;
+        text-align: center;
+    }
+    p{
+        font-size: 24/@rem;
+        margin-top: -5/@rem;
+        color: #aaa;
+    }
+}
+ .iconfont1 {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 40/@rem;
+  color: #111;
+  float: left;
+  margin-top: 20/@rem;
+  margin-left: -410/@rem;
+  }
+
+.iconfont2 {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 56/@rem;
+  color: #aaa;
+  }
+.iconfont3 {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 56/@rem;
+  color: #aaa;
+  }
+.iconfont4 {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 56/@rem;
+  color:#aaa;
+  }
+.iconfont5 {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 56/@rem;
+  color: #aaa;
+  }
+  a:hover{
+       color: #bb1d47;
+  }
+  a>i:hover{
+       color: #bb1d47
+  }
+//头部手机滑屏部分

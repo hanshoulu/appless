@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="swiper.min.css">
+        <script>
+            var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+            //devicePixelRatio设备的像素比；
+            
+            document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+            var html=document.getElementsByTagName('html')[0];
+            var pageWidth=html.getBoundingClientRect().width;
+            html.style.fontSize=pageWidth/10+"px"; 
+        </script>
+        <!-- 
+            1.固定定位元素内容中有input，会导致触发键盘之后导致固定定位错位；
+            
+        -->
+    </head>
+    <body>
+        <!--头部滑屏部分-->
+        <div class="swiper-container">
+            <div class="hsea">
+                <select class="sel">
+                    <!--<option value="课程"></option>
+                    <option value="名师"></option>
+                    <option value="地点"></option>-->
+                    <optgroup  label='选择'>
+                        <option style="color:deeppink;">名师</option>
+                        <option style="color:hotpink" selected="selected">课程</option>
+                    </optgroup>
+                </select>
+                <input type="text" placeholder="请输入关键词">
+                <i class="iconfont1 icon-search"></i>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/bg.png"></div>
+                <div class="swiper-slide"><img src="imgs/bg1.png"></div>
+                <div class="swiper-slide"><img src="imgs/bg2.png"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--以上为头部内容-->
+        <div class="many">
+            <div><img src="imgs/pic1.png"><p>定制教育</div>
+            <div><img src="imgs/pic2.png"><p>签约机构</div>
+            <div><img src="imgs/pic3.png"><p>名师推荐</div>
+            <div><img src="imgs/pic4.png"><p>全部课程</div>
+        </div>
+        <!--文化才艺部分-->
+        <div>
+            <!--1-->
+            <div class="contents">文化才艺</div>
+            <div class="name">
+                <img src="imgs/pic5.png">
+                <div>
+                    <div>金宝贝早教中心</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="name">
+                <img src="imgs/pic6.png">
+                <div>
+                    <div>台湾长颈鹿美语昆山学校</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="name" style="border: none">
+                <img src="imgs/pic7.png">
+                <div>
+                    <div>精锐教育</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--早教益智部分-->
+        <div class="bcc"></div>
+        <div>
+            <!--1-->
+            <div class="contents">早教益智</div>
+            <div class="name">
+                <img src="imgs/pic8.png">
+                <div>
+                    <div>金宝贝早教中心</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="name">
+                <img src="imgs/pic9.png">
+                <div>
+                    <div>台湾长颈鹿美语昆山学校</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="name" style="border: none">
+                <img src="imgs/pic7.png">
+                <div>
+                    <div>精锐教育</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--外语留学-->
+        <div class="bcc"></div>
+        <div>
+            <!--1-->
+            <div class="contents">外语留学</div>
+            <div class="name">
+                <img src="imgs/pic10.png">
+                <div>
+                    <div>金宝贝早教中心</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="name">
+                <img src="imgs/pic11.png">
+                <div>
+                    <div>台湾长颈鹿美语昆山学校</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="name" style="border: none">
+                <img src="imgs/pic12.png">
+                <div>
+                    <div>精锐教育</div>
+                    <div>三星级</div>
+                    <div>
+                        <p>好评：100%</p>
+                        <p>评分:5.00</p>
+                    </div>
+                    <div>
+                        <p>人气：834</p>
+                        <p>信用：3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="footnav">
+                <div class="bian">
+                    <a>
+                    <i class="iconfont2 icon-home"></i>
+                    <p>主页</p>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                    <i class="iconfont3 icon-fenlei"></i>
+                    <p>分类</p>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                    <i class="iconfont4 icon-fabu-copy"></i>
+                    <p>发布</p>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                    <i class="iconfont5 icon-wode"></i>
+                    <p>我的</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+  <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    // 添加小点的样式
+// OnSlideChangeStart=function(swiper){
+//   $(".classname").eq(myswiper.activeIndex).addClass(".class1");
+
+// };
+
+  </script>
+    </body>
+</html>
